@@ -1,0 +1,32 @@
+/*
+.projects {
+  background-color: #f8f9fa;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projects h1 {
+  color: #212529;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.projects ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.projects li {
+  margin: 0.5em 0;
+}
+
+.projects a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.projects a:hover {
+  text-decoration: underline;
+}
+/*

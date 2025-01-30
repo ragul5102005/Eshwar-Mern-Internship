@@ -1,0 +1,92 @@
+/* certifications.css */
+
+/* Styles for the certificate grid */
+.certificates-section {
+    margin-top: 3em;
+  }
+  
+  .certificates-title {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 1em;
+  }
+  
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+  }
+  
+  .certificate-card {
+    cursor: pointer;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .certificate-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .certificate-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .certificate-info h3 {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    color: #333;
+  }
+  
+  .certificate-info p {
+    font-size: 1em;
+    color: #777;
+  }
+  
+  /* Modal styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .close-modal-btn {
+    background-color: #ec7b67;
+    color: white;
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .close-modal-btn:hover {
+    background-color: #bd9b33;
+  }
+  

@@ -1,0 +1,166 @@
+body {
+  background-color: #000000;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #0f0d0d;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+  gap: 2rem;
+  position: relative;
+  animation: fadeIn 2s ease-out; /* Fade-in effect for hero section */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 2rem;
+  animation: slideIn 1.5s ease-out; /* Slide-in effect for image container */
+}
+
+.profile-picture {
+  width: 13cm;
+  height: 13cm;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 10px solid #333333; /* Dark border for subtle contrast */
+  box-shadow: 0 8px 15px rgba(255, 255, 255, 0.2); /* Light shadow for soft glow effect */
+  animation: glow 2s infinite alternate, scaleUp 3s ease-out; /* Glow animation and scale-up effect */
+}
+
+.text-content {
+  max-width: 80%;
+  margin: 0 auto;
+  animation: fadeInText 2s ease-out; /* Fade-in effect for text content */
+}
+
+.text-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #7f0b0b; /* White for high contrast against black background */
+  animation: slideInText 1.5s ease-out; /* Slide-in effect for h1 */
+}
+
+.text-content h1 span {
+  color: #ec7b67; /* Coral for slight highlight */
+}
+
+.text-content h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #941394; /* Soft pastel purple for headings */
+  animation: slideInText 1.5s ease-out; /* Slide-in effect for h2 */
+}
+
+.text-content h2 span {
+  color: #ec7b67; /* Coral for emphasis */
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-style: italic;
+  color: #9a8c98; /* Muted pastel purple for paragraph text */
+  animation: fadeInText 2s ease-out; /* Fade-in effect for paragraph text */
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  animation: fadeInIcons 2s ease-out; /* Fade-in effect for social icons */
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: #ffffff; /* White for icons to stand out */
+  transition: color 0.3s;
+  animation: bounce 1s infinite alternate; /* Bouncing effect for icons */
+}
+
+.social-icons a:hover {
+  color: #ec7b67; /* Coral for hover effect */
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 15px #333333, 0 0 30px #444444, 0 0 45px #555555; /* Subtle black glow */
+  }
+  to {
+    box-shadow: 0 0 20px #555555, 0 0 35px #666666, 0 0 50px #777777; /* Slightly lighter glow */
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInText {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInIcons {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}

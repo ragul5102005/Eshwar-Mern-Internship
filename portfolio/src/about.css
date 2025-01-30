@@ -1,0 +1,195 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #090808;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #f2f2f2; /* White text color for the body */
+  line-height: 1.6;
+}
+
+/* About section styling */
+.about {
+  background-color: #1a1a1a; /* Dark background to contrast with text */
+  background-size: cover;
+  background-position: center;
+  padding: 4em 2em;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  color: rgb(74, 15, 223);
+  animation: fadeIn 2s ease-out; /* Fade-in effect */
+  text-align: center; /* Align content to center */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.about:hover {
+  transform: scale(1.05); /* Subtle zoom-in effect on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+/* Headings and text */
+.about h1,
+.about h2 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  color: #ffffff;
+  text-align: center; /* Center-align headings */
+  animation: slideIn 1.5s ease-out; /* Slide-in animation */
+  letter-spacing: 1px;
+}
+
+.about h2 {
+  margin-top: 0.5em;
+  color: #ec7b67; /* Accent color */
+  font-size: 2.5em;
+}
+
+.about p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  animation: fadeInText 2s ease-out; /* Fade-in animation for paragraphs */
+  max-width: 700px;
+  margin: 0 auto;
+  color: #bdbdbd; /* Subtle text color */
+}
+
+/* Links in the about section */
+.about a {
+  color: #a53a3a;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.about a:hover {
+  color: #bd9b33;
+  text-decoration: underline;
+  transform: translateX(5px); /* Subtle movement on hover */
+}
+
+/* Certifications section styling */
+.certifications-section {
+  margin-top: 4rem;
+}
+
+.certificates-title {
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-bottom: 1.5em;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  justify-items: center;
+}
+
+.certificate-card {
+  background-color: #2c2c2c;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.certificate-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.certificate-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.certificate-info h3 {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-bottom: 0.5em;
+}
+
+.certificate-info p {
+  color: #bbb;
+}
+
+/* Modal for Certificate Details */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #1a1a1a;
+  padding: 2em;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+}
+
+.modal-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1.5em;
+}
+
+.close-modal-btn {
+  background-color: #ec7b67;
+  color: white;
+  border: none;
+  padding: 0.5em 1.5em;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.close-modal-btn:hover {
+  background-color: #f2f2f2;
+  color: #090808;
+}
+
+/* Hover effects for all clickable elements */
+a {
+  position: relative;
+  display: inline-block;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ec7b67;
+  transition: all 0.3s ease;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+a:hover::after {
+  width: 100%;
+  transform: translateX(0);
+}
+
+/* Global transition for smooth effect */
+* {
+  transition: all 0.3s ease;
+}
+
